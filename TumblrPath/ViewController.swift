@@ -16,7 +16,9 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     }
     
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    let cell = tableView.dequeueReusableCell(withIdentifier: "tumblrTableViewCell") as! tumblrTableViewCell
+    return cell
+
     }
     
 @IBOutlet weak var tumblrTableView: UITableView!
